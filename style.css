@@ -1,0 +1,182 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#cabeceraLogo {
+    width: 96%;
+    height: 150px;
+    padding: 0% 2%;
+    background-color: rgb(139, 141, 143);
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px darkred;
+}
+#cabeceraLogo > div {
+    width: 960px;
+    margin: 0px auto;
+    padding-top: 45px;
+}
+#cabeceraLogo > h1 {
+    font: bold 55px cursive;
+    color:rgba(133, 3, 3, 0.548)
+}
+#menuprincipal {
+    width: 96%;
+    height: 50px;
+    padding: 0% 2%;
+    background-color: #9f9f9f;
+    border-top: 1px solid rgb(68, 83, 83);
+    border-bottom: 1px solid rgb(96, 102, 102);
+}
+#menuprincipal > div {
+    width: 960px;
+    margin: 0px auto;
+}
+#menuprincipal li {
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+}
+#menuprincipal li:hover {
+    background-color: darkslategrey;
+}
+#menuprincipal a {
+    font: bold 18px cursive, Arial;
+    color: #333333;
+    text-decoration: none;
+}
+main {
+    width: 96%;
+    padding: 2%;
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/275/72/1023/anime-mo-dao-zu-shi-lan-zhan-wei-ying-hd-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main > div {
+    width: 960px;
+    margin: 0px auto;
+}
+#presentacion {
+    float: left;
+    width: 620px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+#infoadicional {
+    float: right;
+    width: 230px;
+    padding: 20px;
+    background-color: #e7f1f5;
+    border-radius: 10px;
+}
+#infoadicional h3 {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#infoadicional p {
+    text-align: center;
+}
+#infoadicional ul>li> a {
+    text-decoration: none;
+
+}
+#sectas {
+    display: block;
+    width: 960px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.escudo1 {
+    float: right;
+    width: 190px;
+}
+.escudo2 {
+    float: left;
+    width: 190px;
+}
+legend {
+    font-size: 20px;
+    font-family: cursive;
+}
+#detalles p {
+    font-size: small;
+    line-height: 1.5;
+}
+.recuperar {
+    clear: both;
+}
+article h1, h2 {
+    margin-bottom: 5px;
+    font: bold 30px cursive, Georgia, sans-serif;
+}
+article p {
+    font: 15px cursive;
+}
+figure {
+    margin: 10px 0px;
+}
+figure img {
+    padding: 5px;
+    border: 1px solid;
+    width: 95%;
+}
+figure figcaption {
+    text-align: center;
+}
+.escudo {
+    size: 50px;
+
+}
+#pieLogo {
+    width: 96%;
+    padding: 2%;
+    background-color: #9f9f9f;
+}
+#pieLogo > div {
+    width: 960px;
+    margin: 0px auto;
+    background-color: #70777a;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px #000000;
+}
+.seccionpie {
+    float: left;
+    width: 27.33%;
+    padding: 3%;
+}
+.seccionpie h1 {
+    font: bold 20px Arial;
+}
+.seccionpie p {
+    margin-top: 5px;
+}
+.seccionpie a {
+    font: bold 16px cursive;
+    color: #525050;
+    text-decoration: none;
+}
+#listamenu > li {
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+}
+#listamenu a {
+    font: bold 18px cursive;
+    color: #333333;
+    text-decoration: none;
+}
+#menuprincipal li:hover {
+    background-color: #7c7878;
+}
+fieldset {
+    border-radius: 5px;
+    border-color: #333333;
+    box-shadow: 3px 3px 5px #525050;
+}
