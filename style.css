@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
-html {
+body {
     width: 100%;
     padding: 2%;
     background-image: url(https://mfiles.alphacoders.com/984/984178.jpg);
@@ -11,6 +11,8 @@ html {
     background-attachment: scroll;
 }
 #cabeceraLogo {
+    display: flex;
+    justify-content: center;
     width: 96%;
     height: 150px;
     padding: 0% 2%;
@@ -20,11 +22,13 @@ html {
     text-shadow: 3px 3px 3px #f08080;
 }
 #cabeceraLogo > div {
-    width: 96%;
-    margin: 0px auto;
+    flex: 1;
+    max-width: 960px;
     padding-top: 45px;
 }
 #menuprincipal {
+    display: flex;
+    justify-content: center;
     width: 96%;
     height: 50px;
     padding: 0% 2%;
@@ -33,8 +37,8 @@ html {
     border-bottom: 1px solid rgb(96, 102, 102);
 }
 #menuprincipal > div {
-    width: 96%;
-    margin: 0px auto;
+    flex: 1;
+    max-width: 960px;
     text-align: center;
 }
 #menuprincipal li {
@@ -65,34 +69,35 @@ html {
 #menuprincipal li:hover {
     background-color: #7c7878;
 }
-fieldset {
-    border-radius: 10px;
-    border-color: #333333;
-    box-shadow: 3px 3px 5px #525050;
-    padding: 5px;
+main {
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
 }
 main > div {
-    width: 960px;
-    margin: 0px auto;
+    display: flex;
+    flex: 1;
+    max-width: 960px;
 }
 #presentacion {
-    float: left;
-    width: 620px;
-    padding: 20px;
+    flex: 1;
+    margin-right: 20px;
+    padding-top: 30px;
     background-color: #F7D9D3b6;
     border-radius: 10px;
+    max-width: 620px;
 }
 #infoadicional {
-    float: right;
-    width: 230px;
-    padding: 20px;
+    flex: 1;
+    max-width: 280px;
+    padding: 2%;
     background-color: #f7d9d3b6;
     border-radius: 10px;
 }
 #infoadicional h3 {
     font: bold 18px cursive, sans-serif;
     color: #333333;
-    margin-bottom: 10%;
+    margin-bottom: 15px;
     text-align: center;
 }
 #infoadicional p {
@@ -106,7 +111,7 @@ a {
 #sectas {
     display: block;
     width: 90%;
-    padding: 5%;
+    padding: 5px;
     background-color: #f4978ed5;
     border-radius: 1.5em;
 }
@@ -117,10 +122,6 @@ a {
 .escudo2 {
     float: left;
     width: 190px;
-}
-legend {
-    font-size: 20px;
-    font-family: cursive;
 }
 #detalles p {
     font-size: 80%;
@@ -137,27 +138,29 @@ article p {
     font: 85% cursive;
 }
 figure img {
-    padding: 5px;
+    max-width: 98%;
+    padding: 1%;
     border: 2px solid #fc888883;
-    width: 95%;
     border-radius: 5px;
 }
 figure figcaption {
     text-align: center;
 }
 #pieLogo {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 96%;
     padding: 3em;
     background-color: transparent;
 }
 #pieLogo > div {
-    width: 960px;
-    margin: 0px auto;
+    display: flex;
+    flex:1;
+    max-width: 960px;
     background-color: transparent;
 }
 .seccionpie {
-    float: left;
-    width: 27.33%;
+    flex: 1;
     padding: 3%;
 }
 .seccionpie h1 {
@@ -173,4 +176,62 @@ figure figcaption {
 }
 details {
     font: bold 90% cursive;
+}
+
+@media (max-width: 1120px) {
+    article {
+        position: static;
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 10px;
+
+        border-radius: 0px;
+    }
+    article h1 {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 720px) {
+    main > div {
+        display: block;
+    }
+    #presentacion {
+        width: 100%;
+        margin-right: 0px;
+    }
+    #infoadicional {
+        width: 90%;
+        max-width: 100%;
+        padding: 5%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #cabeceraLogo > div {
+        text-align: center;
+    }
+    #cabeceraLogo {
+        height: 1px;
+        font: bold 46px;
+    }
+    #menuprincipal {
+        display: none;
+        width: 100%;
+        height: 100%;
+        padding: 0%;
+    }
+    #menuprincipal li {
+        display: block;
+        margin-right: 0px;
+        text-align: center;
+    }
+    #pieLogo > div {
+        display: block;
+    }
+    .seccionpie {
+        width: 94%;
+        text-align: center;
+    }
 }
