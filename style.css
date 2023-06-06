@@ -37,7 +37,7 @@ body {
     border-bottom: 1px solid rgb(96, 102, 102);
 }
 #menuprincipal > div {
-    flex: 1;
+    flex: 2;
     max-width: 960px;
     text-align: center;
 }
@@ -70,6 +70,7 @@ body {
     background-color: #7c7878;
 }
 main {
+    display: block;
     justify-content: center;
     width: 96%;
     padding: 2%;
@@ -110,7 +111,7 @@ a {
 }
 #sectas {
     display: block;
-    width: 90%;
+    width: 100%;
     padding: 5px;
     background-color: #f4978ed5;
     border-radius: 1.5em;
@@ -145,6 +146,10 @@ figure img {
 }
 figure figcaption {
     text-align: center;
+}
+.other {
+    max-width: 85%;
+    padding: 1%;
 }
 #pieLogo {
     display: flex;
@@ -212,7 +217,7 @@ details {
     #cabeceraLogo > div {
         text-align: center;
     }
-    #cabeceraLogo {
+    #cabeceraLogo h1 {
         height: 1px;
         font: bold 46px;
     }
